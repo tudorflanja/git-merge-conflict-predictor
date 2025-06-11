@@ -64,10 +64,35 @@ This project is ideal for:
 
 ---
 
+## ▶️ How to Run the Project in Google Colab
+
+To run this project directly in your browser using Google Colab:
+
+1. **Open the Notebook in Colab**  
+   Click the link below to open the notebook:  
+   [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/your-username/git-merge-conflict-predictor/blob/main/FlanjaTudorCalin.ipynb)
+
+2. **Run the Notebook**  
+   - Click `Runtime > Run all` or press `Ctrl+F9` to execute all cells.
+   - Make sure all necessary Python packages (e.g., `pandas`, `scikit-learn`, `matplotlib`) are available in the Colab environment. You can install missing packages using `!pip install package-name` inside a cell.
+
+3. **Upload Dataset (if required)**  
+   If the notebook uses an external dataset not bundled with the repo:
+   - Use the upload tool in Colab:  
+     ```python
+     from google.colab import files
+     uploaded = files.upload()
+     ```
+   - Or mount your Google Drive and read directly from it:
+     ```python
+     from google.colab import drive
+     drive.mount('/content/drive')
+     ```
+
+> 💡 Google Colab provides free GPUs and a pre-configured environment, which makes it ideal for experimentation and sharing interactive notebooks.
+
+---
+
 ## 📝 Conclusion
 
 The Git Merge Conflict Predictor provides a smart and data-driven way to anticipate and avoid problematic merges. With improved models or added data (e.g., file types or commit message semantics), this tool could evolve into a powerful GitHub assistant.
-
-Feel free to fork this project, adapt it for your repositories, or use it as inspiration for developer tooling!
-
----
